@@ -15,11 +15,8 @@
         <property name="password" value="thdus" />
     </bean>
 
-    <bean id="connectionMaker" class="com.studyspring.SimpleConnectionMaker"/>
-
-    <bean id="userDAO" class="com.studyspring.UserDAO">
-       <!-- <property name="connectionMaker" ref="connectionMaker"/>-->
+    <bean id="userDAO" class="ch01.studyspring.UserDAO">
+        <property name="dataSource" ref="dataSource"/>
     </bean>
-
 
 </beans>

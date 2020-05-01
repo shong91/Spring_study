@@ -1,4 +1,4 @@
-package com.test;
+package ch01.test;
 
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matcher;

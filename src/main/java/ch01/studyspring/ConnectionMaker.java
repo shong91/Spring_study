@@ -1,4 +1,4 @@
-package com.studyspring;
+package ch01.studyspring;
 
 import java.sql.Connection;
 import java.sql.SQLException;

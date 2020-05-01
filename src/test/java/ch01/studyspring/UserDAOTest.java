@@ -1,4 +1,4 @@
-package com.studyspring;
+package ch01.studyspring;
 
 import org.junit.Before;
 import org.junit.Test;

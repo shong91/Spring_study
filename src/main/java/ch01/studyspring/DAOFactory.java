@@ -1,4 +1,4 @@
-package com.studyspring;
+package ch01.studyspring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

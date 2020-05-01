@@ -1,4 +1,4 @@
-package com.studyspring;
+package ch01.studyspring;
 
 public class User {
     private String id;
