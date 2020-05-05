@@ -52,9 +52,6 @@ public class UserDAOJdbcTest {
 
     @Test
     public void add() {
-        // 등록 전 cnt 확인
-        userDAO.deleteAll();
-        assertThat(userDAO.getCount(), is(0));
 
         // 등록
         userDAO.add(user1);
@@ -67,6 +64,31 @@ public class UserDAOJdbcTest {
 
         User userget2 = userDAO.get(user2.getId());
         checkSameUser(userget2, user2);
+    }
+
+    @Test
+    public void update(){
+        // 등록 전 cnt 확인
+        userDAO.deleteAll();
+        assertThat(userDAO.getCount(), is(0));
+
+        userDAO.add(user1);
+        userDAO.add(user2);
+
+        user1.setName("수정자");
+        user1.setPassword("123123");
+        user1.setLevels(Level.GOLD);
+        user1.setRecommend(99);
+
+        userDAO.update(user1);
+
+        // user1: 변경
+        User user1Update = userDAO.get(user1.getId());
+        checkSameUser(user1, user1Update);
+
+        // user2: 변경하지 않음
+        User user2Same = userDAO.get(user2.getId());
+        checkSameUser(user1, user2Same);
     }
 
     @Test

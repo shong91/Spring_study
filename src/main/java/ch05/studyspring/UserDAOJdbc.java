@@ -101,4 +101,17 @@ public class UserDAOJdbc implements UserDAO {
                 });
 
     }
+
+    @Override
+    public void update(User user) {
+        this.jdbcTemplate.update("UPDATE USERS SET " +
+                "NAME = ?, PASSWORD = ?, LEVELS = ?" +
+                ", LOGIN = ?, RECOMMEND = ?" +
+                "WHERE ID = ?"
+        , user.getName()
+        , user.getPassword()
+        , user.getLevels().intValue()
+        , user.getLogin()
+        , user.getRecommend());
+    }
 }
