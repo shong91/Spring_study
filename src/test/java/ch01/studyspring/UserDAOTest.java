@@ -54,6 +54,9 @@ public class UserDAOTest {
 
     }
 
+
+
+
     @Test//(expected = EmptyResultDataAccessException.class)
     public void getUserFailure() throws ClassNotFoundException, SQLException {
         userDAO.deleteAll();
