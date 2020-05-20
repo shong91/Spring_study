@@ -30,4 +30,14 @@ public class User {
         this.recommend = recommend;
     }
 
+    //레벨 업그레이드가 필요하면 User 클래스에서 이를 수행함.
+    public void upgradeLevel(){
+        Level nextLevel = this.levels.nextLevel();
+        if(nextLevel == null) {
+            throw new IllegalArgumentException(this.levels + "은 업그레이드가 불가합니다. ");
+
+        } else {
+            this.levels = nextLevel;
+        }
+    }
 }
