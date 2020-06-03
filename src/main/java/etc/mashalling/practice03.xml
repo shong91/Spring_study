@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<practice>
+    <items>
+        <item>
+            <a> value A </a>
+            <b> value B </b>
+            <c> value C </c>
+        </item>
+
+        <item>
+            <a> other value </a>
+            <b> other value B </b>
+            <c> other value C </c>
+        </item>
+
+
+        <item>
+            <a> another value </a>
+            <b> another value B </b>
+            <c> another value C </c>
+        </item>
+    </items>
+</practice>
