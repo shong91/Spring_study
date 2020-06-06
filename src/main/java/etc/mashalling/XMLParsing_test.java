@@ -55,3 +55,7 @@ public class XMLParsing_test {
         return nValue.getNodeValue();
     }
 }
+
+// https://blog.naver.com/PostView.nhn?blogId=nonamed0000&logNo=220988048654&categoryNo=12&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
+// https://kingbbode.tistory.com/6?category=737338
+// https://www.inflearn.com/questions/16184
